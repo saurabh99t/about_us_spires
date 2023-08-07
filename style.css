@@ -15,7 +15,7 @@ body {
 .outer {
   width: 100%;
   background-color: #f0f0f0;
-  height: 60vh;
+  height: 80vh;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -33,6 +33,9 @@ body {
 .inner-section2 {
   width: 40%;
 }
+
+
+
 
 .inner-section1 p,
 .inner-section1 h2 {
@@ -63,13 +66,47 @@ body {
 .banner-div {
   position: relative;
   overflow: hidden;
+  text-align: center;
 }
 
 .banner-div img {
   width: 100%;
-  height: 40vh;
+  height: 20vh;
   object-fit: cover;
 }
+
+
+.tagline h1{
+  font-size: 4rem;
+color: white;
+
+}
+
+.tagline{
+    position: relative;
+    z-index: 1;
+}
+
+.image-div{
+    position: absolute;
+    top: 0;
+  
+    /* left: 10px; */
+}
+
+
+
+.banner-div{
+height: 20vh;
+
+}
+
+.image-div img{
+width: 100vw;
+/* height: 200px; */
+}
+
+
 
 @media screen and (max-width: 768px) {
   .outer {
@@ -82,8 +119,27 @@ body {
     width: 100%;
   }
 
+
+  .banner-div{
+    height: auto;
+  }
+
   .banner-div img {
     height: auto;
+  }
+
+  .inner-section1 p {
+    font-size: 15px;
+  }
+
+
+  .tagline h1{
+    font-size: 2rem;
+  }
+
+
+  .inner-section2 {
+    padding-top:30px;
   }
 }
 
